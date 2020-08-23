@@ -1,0 +1,101 @@
+
+body {
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: 'Inconsolata', monospace;
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 13px;
+    letter-spacing: 1.5px;
+    color: rgb(95, 95, 95);
+}
+
+textarea {
+    tab-size: 2;
+    width: 100%;
+    height: 100%;
+    resize: vertical;
+    outline: none;
+    display: block;
+    font-size: 16px;
+    border-color: rgb(226, 226, 226);
+    transition: box-shadow ease-in-out 0.25s;
+}
+textarea::placeholder {
+    color: #adadad
+}
+textarea:focus {
+    box-shadow: 0 0 10px lightgreen;
+}
+
+select {
+    border: none;
+    outline: none;
+}
+
+#code {
+    width: 75%;
+    float: left;
+    min-height: 160px;
+    background: linear-gradient(rgb(245, 245, 245),rgb(240, 240, 240) 100%);
+}
+
+#output, #debugger {
+    border: none;
+    word-wrap: break-word;
+    color: rgb(255, 255, 255);
+    background-color: rgb(53, 53, 53);
+    border-radius: 6px;
+    min-height: 150px;
+    box-shadow: 0px 0px 9px 0px rgb(47, 47, 47);
+}
+
+#output {
+    font-size: 20px;
+    min-height: 200px;
+    padding: 6px;
+}
+
+#debugger {
+    width: 23%;
+    padding-left: 6px;
+    min-height: 160px;
+    margin-left: 77%;
+    resize: none;
+}
+
+button {
+    color: white;
+    font-size: 30px;
+    font-family: 'Inconsolata', monospace;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    letter-spacing: 2px;
+}
+
+#clrcode, #clrinput, #clroutput {
+    float: right;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    background: linear-gradient(rgb(231, 154, 120),rgb(202, 92, 105) 100%);
+}
+
+#clrcode {
+    margin-right: 25%;
+}
+
+#run {
+    margin-left: 20px;
+    background: linear-gradient(rgb(120, 231, 154),rgb(105, 202, 92) 100%);
+}

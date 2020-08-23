@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Online Brackets Interpreter</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+        <script src="interpreter.js"></script>
+        <script src="examples.js"></script>
+    </head>
+    <body>
+        <h1>Your Code</h1>
+        <label for="examples">Examples:</label>
+        <select id="examples" name="Examples" onchange="setexample();">
+            <option value="alphabet">Alphabet</option>
+            <option value="hello_world">Hello World</option>
+            <option value="is_even">Is even?</option>
+        </select>
+        <br><br>
+        <button id="clrcode" onclick="code.value=''">Clear</button>
+        <textarea id="code" placeholder="^_^" onmousedown="mousedown=true" onmouseup="mousedown=false" onkeyup="if(mousedown)resize();dbgr.update();" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}"></textarea>
+        <textarea id="debugger" readonly></textarea>
+        <br>
+        <button id="run" onclick="run();">Run</button>
+        <h1>Input</h1>
+        <button id="clrinput" onclick="input.value=''">Clear</button>
+        <textarea id="input" rows="7"></textarea>
+        <h1>Output</h1>
+        <button id="clroutput" onclick="output.innerHTML=''">Clear</button>
+        <div id="output"></textarea>
+    </body>
+    <script src="core.js"></script>
+</html>
