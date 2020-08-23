@@ -52,7 +52,7 @@ Any characters other than brackets, are simply ignored.
 
 The following program prints the whole english alphabet.
 
-```
+```c
 ()() (){}{}()()()(){}<   push 97 'a'
 ()() (){}{}{}{}(){}{}<   push 123 'z' + 1
 [][]{                    while top != 123:
@@ -82,7 +82,7 @@ Simple `while` loop:
 ### Statements
 
 Simple `if` statements:
-```
+```c
 ()() (){}<     push 1
 ()() ()()<     push 0
 [](){          if 1 == 0
@@ -99,7 +99,7 @@ Simple `if` statements:
 ```
 
 Simple `if-else` statement:
-```
+```c
 ()() (){}{}<   push 3
 ()() (){}<     push 1
 [](){          if 3 == 1
