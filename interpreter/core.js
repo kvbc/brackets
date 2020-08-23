@@ -16,8 +16,7 @@ dbgr.update = function(inp = new Interpreter(code.value)) {
 function run() {
     var inp = new Interpreter(code.value, input.value);
     try {
-        var out = inp.run();
-        output.innerHTML += '$ ' + out.replace(/\n/g,'<br>&nbsp;&nbsp;') + '<br>';
+        output.innerHTML += '$ ' + inp.run().replace(/\n/g,'<br>&nbsp;&nbsp;') + '<br>';
         dbgr.update(inp);
     } catch(err) {
         output.innerHTML += `<span style="color:tomato;">${err}<br>`;
