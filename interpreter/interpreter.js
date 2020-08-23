@@ -6,8 +6,7 @@ function Interpreter(code, input = '') {
 
     var err = msg => `Error:${ln}: ${msg}`;
     Array.prototype._pop   = function(cmd) { if(this.length) return this.pop();   else throw err(`Stack is empty, for command '${cmd}'`); }
-    Array.prototype._shift = function(cmd) { if(this.length) return this.shift(); else throw err(`Reached end input, for command '${cmd}'`); }
-
+	
     function skipbd() {
         var bal = 1, t;
         if(next() != '{') throw err("Expected the body to start with an '{'");
@@ -93,7 +92,7 @@ function Interpreter(code, input = '') {
                 case '<>[]': stack.push((input.shift()||'\0').charCodeAt()); break;
                 case '<><>': stack.push(+input.shift()||0); break;
             }
-        var sep = out.length ? '\n' : '';
+        var sep = out ? '\n' : '';
         return out + `<span style="color:gold;">${sep}stack: [${stack.join(', ')}]${sep}</span>`;
     }
 }
