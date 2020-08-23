@@ -17,7 +17,7 @@
         </select>
         <br><br>
         <button id="clrcode" onclick="code.value=''">Clear</button>
-        <textarea id="code" placeholder="^_^" onmousedown="mousedown=true" onmouseup="mousedown=false" onkeyup="if(mousedown)resize();dbgr.update();" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}"></textarea>
+        <textarea id="code" placeholder="^_^" onmousedown="mousedown=true" onmouseup="mousedown=false" onkeyup="dbgr.update();" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}"></textarea>
         <textarea id="debugger" readonly></textarea>
         <br>
         <button id="run" onclick="run();">Run</button>
