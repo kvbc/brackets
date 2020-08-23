@@ -119,4 +119,4 @@ You can find more examples on the online Brackets interpreter below.
 &nbsp;
 # Interpreter
 
-Try out official Brackets [interpreter]() online.
+Try out official Brackets [interpreter](https://kvbc.github.io/brackets/interpreter/) online.
