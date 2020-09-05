@@ -1,6 +1,6 @@
 # Brackets
 
-Brackets is an esoteric stack-based programming language. A little bit confusing, because consists only of 4 symbols. The language uses Instruction Modification Parameter (IMP) and was heavily inspired by [whitespace](https://en.wikipedia.org/wiki/Whitespace_(programming_language)).
+Brackets is an esoteric stack-based programming language. A little bit confusing, because consists only of 4 unique characters. The language uses Instruction Modification Parameter (IMP) and was heavily inspired by [whitespace](https://en.wikipedia.org/wiki/Whitespace_(programming_language)).
 
 &nbsp;
 # Syntax
