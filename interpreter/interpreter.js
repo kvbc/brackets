@@ -5,7 +5,7 @@ function Interpreter(code, input = '') {
     input = [...input];
 
     var err = msg => `Error:${ln}: ${msg}`;
-    Array.prototype._pop   = function(cmd) { if(this.length) return this.pop();   else throw err(`Stack is empty, for command '${cmd}'`); }
+    Array.prototype._pop = function(cmd) { if(this.length) return this.pop(); else throw err(`Stack is empty, for command '${cmd}'`); }
 	
     function skipbd() {
         var bal = 1, t;
