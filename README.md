@@ -69,7 +69,7 @@ Simple `while` loop:
 ```c
 ()() (){}{}()(){}()()<   push 100
 ()() ()()<               push 0
-[]<>{                    while top != 0, top /= 2:
+[]<>{                    while top != 0 do top /= 2:
   (){}                      dup
   <>{}                      printn
   ()() (){}(){}()<          push 10 '\n'
