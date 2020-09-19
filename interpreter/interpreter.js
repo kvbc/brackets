@@ -19,7 +19,7 @@ function Interpreter(code, input = '') {
         var bin = '';
         while(tk[ip] != '<')
             if(ip < tk.length) bin += next();
-            else throw err("Expected an number to end with an '<'");
+            else throw err("Expected the number to end with an '<'");
         next(); ip--;
         bin = bin.replace(/\(\)/g,'0').replace(/\{\}/g,'1').slice(0,-1);
         if(bin[0]!='0' && bin[0]!='1') throw err(`Expected the first bit to be either () or {}, got: ${bin[0]+bin[1]}`);
