@@ -85,14 +85,14 @@ Simple `if` statements:
 ```c
 ()() (){}<     push 1
 ()() ()()<     push 0
-[](){          if 1 == 0
+[](){          if 1 == 0:
   ()() (){}<      push 1
   <>{}            printn
 }
 
 ()() (){}<     push 1
 ()() ()()<     push 0
-[]{}{          if 1 != 0
+[]{}{          if 1 != 0:
   ()() {}{}<      push -1
   <>{}            printn
 }
@@ -102,13 +102,13 @@ Simple `if-else` statement:
 ```c
 ()() (){}{}<   push 3
 ()() (){}<     push 1
-[](){          if 3 == 1
+[](){          if 3 == 1:
   ()() (){}<      push 1
   <>{}            printn
   ()() (){}<      push 1
 }
 ()() (){}<     push 1
-[]{}{          if 3 != 1
+[]{}{          if 3 != 1:
   ()() {}{}<      push -1
   <>{}            printn
 }
