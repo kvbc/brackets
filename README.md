@@ -35,7 +35,7 @@ ___
 ### Numbers
 
 Numbers in `Braces` are in binary, where `()` represents `0`, and `{}` represents `1`.
-The first bit tells us if the number is positive -`()`, or negative -`{}`. The numbers have to end with an opening arrow bracket `<`.
+The first bit tells us if the number is positive -`()`, or negative -`{}`. Numbers have to end with an opening arrow bracket `<`.
 
 Here is an example:
 ```
