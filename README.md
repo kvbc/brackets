@@ -32,9 +32,9 @@ Brackets is an esoteric stack-based programming language. A little bit confusing
 | `<>` | `<>`    | -         | Read `n` and push it onto the stack as a number     |
 
 ___
-### Number
+### Numbers
 
-The numbers in `Braces` are in binary, where `()` represents `0`, and `{}` represents `1`.
+Numbers in `Braces` are in binary, where `()` represents `0`, and `{}` represents `1`.
 The first bit tells us if the number is positive -`()`, or negative -`{}`. The numbers have to end with an opening arrow bracket `<`.
 
 Here is an example:
